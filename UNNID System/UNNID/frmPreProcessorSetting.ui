@@ -1,0 +1,1917 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>frmPreProcessorSetting</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>frmPreProcessorSetting</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>751</width>
+            <height>381</height>
+        </rect>
+    </property>
+    <property name="paletteBackgroundColor">
+        <color>
+            <red>170</red>
+            <green>255</green>
+            <blue>255</blue>
+        </color>
+    </property>
+    <property name="palette">
+        <palette>
+            <active>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>127</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>63</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>127</green>
+                    <blue>127</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>170</green>
+                    <blue>170</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>170</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>128</blue>
+                </color>
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+            </active>
+            <disabled>
+                <color>
+                    <red>128</red>
+                    <green>128</green>
+                    <blue>128</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>127</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>38</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>127</green>
+                    <blue>127</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>170</green>
+                    <blue>170</blue>
+                </color>
+                <color>
+                    <red>128</red>
+                    <green>128</green>
+                    <blue>128</blue>
+                </color>
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>128</red>
+                    <green>128</green>
+                    <blue>128</blue>
+                </color>
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>170</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>128</blue>
+                </color>
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>192</blue>
+                </color>
+                <color>
+                    <red>128</red>
+                    <green>0</green>
+                    <blue>128</blue>
+                </color>
+            </disabled>
+            <inactive>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>127</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>38</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>127</green>
+                    <blue>127</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>170</green>
+                    <blue>170</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>170</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>128</blue>
+                </color>
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>192</blue>
+                </color>
+                <color>
+                    <red>128</red>
+                    <green>0</green>
+                    <blue>128</blue>
+                </color>
+            </inactive>
+        </palette>
+    </property>
+    <property name="caption">
+        <string>PreProcessor Setting</string>
+    </property>
+    <property name="icon">
+        <pixmap>PreProcessorSetting.png</pixmap>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>lblPreprocessorOption</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>4</y>
+                <width>150</width>
+                <height>27</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Preprocessor Options for</string>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <item>
+            <property name="text">
+                <string>tcpdump (Network Packet) format</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>kddcup (Network Connection) format</string>
+            </property>
+        </item>
+        <property name="name">
+            <cstring>cmbTcpdumpKddcup</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>170</x>
+                <y>10</y>
+                <width>270</width>
+                <height>21</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QTabWidget">
+        <property name="name">
+            <cstring>tabFeatures</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>730</width>
+                <height>280</height>
+            </rect>
+        </property>
+        <property name="palette">
+            <palette>
+                <active>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>127</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>63</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>127</green>
+                        <blue>127</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>170</green>
+                        <blue>170</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>241</red>
+                        <green>241</green>
+                        <blue>241</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                </active>
+                <disabled>
+                    <color>
+                        <red>128</red>
+                        <green>128</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>127</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>38</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>127</green>
+                        <blue>127</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>170</green>
+                        <blue>170</blue>
+                    </color>
+                    <color>
+                        <red>128</red>
+                        <green>128</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>128</red>
+                        <green>128</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>241</red>
+                        <green>241</green>
+                        <blue>241</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>192</blue>
+                    </color>
+                    <color>
+                        <red>128</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                </disabled>
+                <inactive>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>127</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>38</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>127</green>
+                        <blue>127</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>170</green>
+                        <blue>170</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>241</red>
+                        <green>241</green>
+                        <blue>241</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>192</blue>
+                    </color>
+                    <color>
+                        <red>128</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                </inactive>
+            </palette>
+        </property>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tabPageBasicTcp</cstring>
+            </property>
+            <attribute name="title">
+                <string>Connection Basic Features</string>
+            </attribute>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout5</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>710</width>
+                        <height>220</height>
+                    </rect>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>chkDuration</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Duration</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="0">
+                        <property name="name">
+                            <cstring>chkDstBytes</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Bytes</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>chkProtocolType</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Protocol Type</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="1">
+                        <property name="name">
+                            <cstring>chkWrongFragment</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Wrong Fragment</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="1">
+                        <property name="name">
+                            <cstring>chkLand</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Land</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>chkService</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Service</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="1">
+                        <property name="name">
+                            <cstring>chkUrgent</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Urgent</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="0">
+                        <property name="name">
+                            <cstring>chkSrcBytes</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Source Bytes</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>chkFlag</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Flag</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <attribute name="title">
+                <string>Service Based Features</string>
+            </attribute>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout6</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>710</width>
+                        <height>220</height>
+                    </rect>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QCheckBox" row="3" column="1">
+                        <property name="name">
+                            <cstring>chkNumShells</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Num of Shells </string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="2">
+                        <property name="name">
+                            <cstring>chkIsHotLogin</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Is Hot Login</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>chkLoggedIn</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Logged In</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="1">
+                        <property name="name">
+                            <cstring>chkNumRoot</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Number of root</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="0">
+                        <property name="name">
+                            <cstring>chkRootShell</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Root Shell</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>chkSuAttempted</cstring>
+                        </property>
+                        <property name="text">
+                            <string>su Attempted </string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="1">
+                        <property name="name">
+                            <cstring>chkNumAccessFiles</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Number of Access Files </string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="0">
+                        <property name="name">
+                            <cstring>chkNumCompromised</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Number of Compromised</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>chkNumFailedLogins</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Number of Failed Logins </string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="1">
+                        <property name="name">
+                            <cstring>chkNumFileCreations</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Number of File Creations </string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="2">
+                        <property name="name">
+                            <cstring>chkIsGuestLogin</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Is Guest Login</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>chkHot</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Hot </string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="2">
+                        <property name="name">
+                            <cstring>chkNumOutboundCmds</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Number of OutBound Cmds</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <attribute name="title">
+                <string>Time Window Based Features</string>
+            </attribute>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>chkCount</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>10</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Count</string>
+                </property>
+            </widget>
+            <widget class="QGroupBox">
+                <property name="name">
+                    <cstring>GroupBox1</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>40</y>
+                        <width>330</width>
+                        <height>210</height>
+                    </rect>
+                </property>
+                <property name="title">
+                    <string>Refer to Same Host Connections</string>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout7</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>30</y>
+                            <width>147</width>
+                            <height>170</height>
+                        </rect>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>chkSynErrorRate</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Syn Error Rate </string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>chkRejErrorRate</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Rej Error Rate</string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>chkSameServiceRate</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Same Service Rate</string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>chkDiffServiceRate</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Different Service Rate</string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>chkServiceCount</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Service Count</string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+            </widget>
+            <widget class="QGroupBox">
+                <property name="name">
+                    <cstring>GroupBox2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>360</x>
+                        <y>40</y>
+                        <width>350</width>
+                        <height>210</height>
+                    </rect>
+                </property>
+                <property name="title">
+                    <string>Refer to Same Service Connections</string>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout8</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>30</y>
+                            <width>176</width>
+                            <height>100</height>
+                        </rect>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>chkServiceSynErrorRate</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Service Syn Error Rate</string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>chkServiceRejErrorRate</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Service Rej Error Rate</string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>chkServiceDiffHostRate</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Service Different Host Rate</string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <attribute name="title">
+                <string>Destination Based Features</string>
+            </attribute>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>layout6</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>710</width>
+                        <height>220</height>
+                    </rect>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QCheckBox" row="1" column="1">
+                        <property name="name">
+                            <cstring>chkDstHostSynErrorRate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Syn Error Rate</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>chkDstHostCount</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Count</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="0">
+                        <property name="name">
+                            <cstring>chkDstHostSameSrcPortRate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Same Source Port Rate</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>chkDstHostSrvCount</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Service Count</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>chkDstHostSrvDiffHostRate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Service Different Host Rate</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="1">
+                        <property name="name">
+                            <cstring>chkDstHostRejErrorRate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Rej Error Rate</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="1">
+                        <property name="name">
+                            <cstring>chkDstHostSrvSynErrorRate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Service Syn Error Rate</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="1">
+                        <property name="name">
+                            <cstring>chkDstHostSrvRejErrorRate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Service Rej Error Rate</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="0">
+                        <property name="name">
+                            <cstring>chkDstHostDiffSrvRate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Different Service Rate</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>chkDstHostSameSrvRate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Host Same Service Rate</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </widget>
+    <widget class="QTabWidget">
+        <property name="name">
+            <cstring>tabPacketType</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>730</width>
+                <height>280</height>
+            </rect>
+        </property>
+        <property name="palette">
+            <palette>
+                <active>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>127</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>63</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>127</green>
+                        <blue>127</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>170</green>
+                        <blue>170</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>241</red>
+                        <green>241</green>
+                        <blue>241</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                </active>
+                <disabled>
+                    <color>
+                        <red>128</red>
+                        <green>128</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>127</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>38</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>127</green>
+                        <blue>127</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>170</green>
+                        <blue>170</blue>
+                    </color>
+                    <color>
+                        <red>128</red>
+                        <green>128</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>128</red>
+                        <green>128</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>241</red>
+                        <green>241</green>
+                        <blue>241</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>192</blue>
+                    </color>
+                    <color>
+                        <red>128</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                </disabled>
+                <inactive>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>127</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>38</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>127</green>
+                        <blue>127</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>170</green>
+                        <blue>170</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>241</red>
+                        <green>241</green>
+                        <blue>241</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                    <color>
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                    </color>
+                    <color>
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>192</blue>
+                    </color>
+                    <color>
+                        <red>128</red>
+                        <green>0</green>
+                        <blue>128</blue>
+                    </color>
+                </inactive>
+            </palette>
+        </property>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <attribute name="title">
+                <string>IP Header Fields</string>
+            </attribute>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>layout10</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>700</width>
+                        <height>240</height>
+                    </rect>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QCheckBox" row="2" column="1">
+                        <property name="name">
+                            <cstring>chkIpDestIp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination IP Address</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>chkIpTimeStamp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Time Stamp</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>chkIpID</cstring>
+                        </property>
+                        <property name="text">
+                            <string>IP Identification (ID)</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>chkIpDatagramLen</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Datagram Lentgh</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="1">
+                        <property name="name">
+                            <cstring>chkIpSourceIp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Source IP Address</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="1">
+                        <property name="name">
+                            <cstring>chkIpFragFlag</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Fragmentation Flag</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="0">
+                        <property name="name">
+                            <cstring>chkIpHeaderLen</cstring>
+                        </property>
+                        <property name="text">
+                            <string>IP Header Lentgh</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="0">
+                        <property name="name">
+                            <cstring>chkIpTTL</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Time To Live (TTL)</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>chkIpTOS</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Type Of Service (TOS)</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="1">
+                        <property name="name">
+                            <cstring>chkPacketLand</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Land : Same Source and Destination IP</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tabTCP</cstring>
+            </property>
+            <attribute name="title">
+                <string>TCP Header Fields</string>
+            </attribute>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>chkTcpSourcePort</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>11</x>
+                        <y>30</y>
+                        <width>276</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>TCP Source Port</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>chkTcpWindowSize</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>290</x>
+                        <y>80</y>
+                        <width>276</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>TCP Window Size</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>chkTcpDestPort</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>290</x>
+                        <y>30</y>
+                        <width>276</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>TCP Destination Port</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>chkTcpHeaderLen</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>80</y>
+                        <width>276</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>TCP Header Length</string>
+                </property>
+            </widget>
+            <widget class="QGroupBox">
+                <property name="name">
+                    <cstring>grpTcpFlags</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>130</y>
+                        <width>440</width>
+                        <height>110</height>
+                    </rect>
+                </property>
+                <property name="title">
+                    <string>TCP Flags</string>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>chkTcpRstFlag</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>80</y>
+                            <width>90</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>RST Flag</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>chkTcpSynFlag</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>20</y>
+                            <width>90</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>SYN Flag</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>chkTcpAckFlag</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>50</y>
+                            <width>90</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>ACK Flag</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>chkTcpFinFlag</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>280</x>
+                            <y>20</y>
+                            <width>90</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>FIN Flag</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>chkTcpPushFlag</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>280</x>
+                            <y>50</y>
+                            <width>90</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>PUSH Flag</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>chkTcpUrgFlag</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>280</x>
+                            <y>80</y>
+                            <width>90</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>URG Flag</string>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tabUDP</cstring>
+            </property>
+            <attribute name="title">
+                <string>UDP Header Fields</string>
+            </attribute>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>layout10</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>710</width>
+                        <height>60</height>
+                    </rect>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>chkUdpSourcePort</cstring>
+                        </property>
+                        <property name="text">
+                            <string>UDP Source Port</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>chkUdpDestPort</cstring>
+                        </property>
+                        <property name="text">
+                            <string>UDP Destination Port</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tabICMP</cstring>
+            </property>
+            <attribute name="title">
+                <string>ICMP Header Fields</string>
+            </attribute>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>layout12</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>710</width>
+                        <height>100</height>
+                    </rect>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>chkIcmpType</cstring>
+                        </property>
+                        <property name="text">
+                            <string>ICMP Type</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>chkIcmpID</cstring>
+                        </property>
+                        <property name="text">
+                            <string>ICMP Identification (ID)</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>chkIcmpCode</cstring>
+                        </property>
+                        <property name="text">
+                            <string>ICMP Code</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="1">
+                        <property name="name">
+                            <cstring>chkIcmpSeq</cstring>
+                        </property>
+                        <property name="text">
+                            <string>ICMP Sequence</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>btmOk</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>220</x>
+                <y>340</y>
+                <width>91</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <family>Helvetica [Urw]</family>
+                <bold>1</bold>
+            </font>
+        </property>
+        <property name="text">
+            <string>OK</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>btmCancel</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>330</x>
+                <y>340</y>
+                <width>91</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <family>Helvetica [Urw]</family>
+                <bold>1</bold>
+            </font>
+        </property>
+        <property name="text">
+            <string>Cancel</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>btmApply</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>440</x>
+                <y>340</y>
+                <width>91</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <family>Helvetica [Urw]</family>
+                <bold>1</bold>
+            </font>
+        </property>
+        <property name="text">
+            <string>Apply</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>btmOk</sender>
+        <signal>clicked()</signal>
+        <receiver>frmPreProcessorSetting</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>btmOk</sender>
+        <signal>clicked()</signal>
+        <receiver>frmPreProcessorSetting</receiver>
+        <slot>SetPreProcessorParameters()</slot>
+    </connection>
+    <connection>
+        <sender>btmApply</sender>
+        <signal>clicked()</signal>
+        <receiver>frmPreProcessorSetting</receiver>
+        <slot>SetPreProcessorParameters()</slot>
+    </connection>
+    <connection>
+        <sender>btmCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>frmPreProcessorSetting</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>cmbTcpdumpKddcup</sender>
+        <signal>activated(int)</signal>
+        <receiver>frmPreProcessorSetting</receiver>
+        <slot>ActivateFeaturesOrPacketTypeTab(int)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>cmbTcpdumpKddcup</tabstop>
+    <tabstop>tabFeatures</tabstop>
+    <tabstop>chkDuration</tabstop>
+    <tabstop>tabPacketType</tabstop>
+    <tabstop>chkUdpSourcePort</tabstop>
+    <tabstop>chkDstBytes</tabstop>
+    <tabstop>chkProtocolType</tabstop>
+    <tabstop>chkService</tabstop>
+    <tabstop>chkSrcBytes</tabstop>
+    <tabstop>chkFlag</tabstop>
+    <tabstop>chkLand</tabstop>
+    <tabstop>chkWrongFragment</tabstop>
+    <tabstop>chkUrgent</tabstop>
+    <tabstop>chkHot</tabstop>
+    <tabstop>chkNumFailedLogins</tabstop>
+    <tabstop>chkLoggedIn</tabstop>
+    <tabstop>chkNumCompromised</tabstop>
+    <tabstop>chkRootShell</tabstop>
+    <tabstop>chkSuAttempted</tabstop>
+    <tabstop>chkNumRoot</tabstop>
+    <tabstop>chkNumFileCreations</tabstop>
+    <tabstop>chkNumShells</tabstop>
+    <tabstop>chkNumAccessFiles</tabstop>
+    <tabstop>chkNumOutboundCmds</tabstop>
+    <tabstop>chkIsHotLogin</tabstop>
+    <tabstop>chkIsGuestLogin</tabstop>
+    <tabstop>chkCount</tabstop>
+    <tabstop>chkSynErrorRate</tabstop>
+    <tabstop>chkRejErrorRate</tabstop>
+    <tabstop>chkSameServiceRate</tabstop>
+    <tabstop>chkDiffServiceRate</tabstop>
+    <tabstop>chkServiceCount</tabstop>
+    <tabstop>chkServiceSynErrorRate</tabstop>
+    <tabstop>chkServiceRejErrorRate</tabstop>
+    <tabstop>chkServiceDiffHostRate</tabstop>
+    <tabstop>btmOk</tabstop>
+    <tabstop>btmCancel</tabstop>
+    <tabstop>btmApply</tabstop>
+    <tabstop>chkDstHostSynErrorRate</tabstop>
+    <tabstop>chkDstHostCount</tabstop>
+    <tabstop>chkDstHostSameSrcPortRate</tabstop>
+    <tabstop>chkDstHostSrvCount</tabstop>
+    <tabstop>chkDstHostSrvDiffHostRate</tabstop>
+    <tabstop>chkDstHostRejErrorRate</tabstop>
+    <tabstop>chkDstHostSrvSynErrorRate</tabstop>
+    <tabstop>chkDstHostSrvRejErrorRate</tabstop>
+    <tabstop>chkDstHostDiffSrvRate</tabstop>
+    <tabstop>chkDstHostSameSrvRate</tabstop>
+    <tabstop>chkUdpDestPort</tabstop>
+    <tabstop>chkTcpSourcePort</tabstop>
+    <tabstop>chkTcpWindowSize</tabstop>
+    <tabstop>chkTcpFinFlag</tabstop>
+    <tabstop>chkTcpDestPort</tabstop>
+    <tabstop>chkTcpHeaderLen</tabstop>
+    <tabstop>chkIcmpCode</tabstop>
+    <tabstop>chkIcmpType</tabstop>
+    <tabstop>chkIcmpID</tabstop>
+    <tabstop>chkIcmpSeq</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">qpushbutton.h</include>
+    <include location="local" impldecl="in implementation">frmPreProcessorSetting.ui.h</include>
+</includes>
+<slots>
+    <slot>SetPreProcessorParameters()</slot>
+    <slot>init()</slot>
+    <slot>ActivateFeaturesOrPacketTypeTab( int FeaturesOrPacketType )</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

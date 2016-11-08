@@ -1,0 +1,113 @@
+[Breakpoint 0]
+Enabled=true
+File=ManagementControl.cpp
+Line=27
+Temporary=false
+
+[Breakpoint 1]
+Enabled=true
+File=NeuralNet.cpp
+Line=447
+Temporary=false
+
+[Breakpoint 10]
+Enabled=true
+File=PreProcessor.cpp
+Line=1241
+Temporary=false
+
+[Breakpoint 11]
+Enabled=true
+File=PreProcessor.cpp
+Line=374
+Temporary=false
+
+[Breakpoint 12]
+Enabled=true
+File=TcpDumpPacketProvider.cpp
+Line=313
+Temporary=false
+
+[Breakpoint 13]
+Enabled=true
+File=NeuralNet.cpp
+Line=91
+Temporary=false
+
+[Breakpoint 14]
+Enabled=true
+File=NeuralNet.cpp
+Line=206
+Temporary=false
+
+[Breakpoint 15]
+Enabled=true
+File=NeuralNet.cpp
+Line=143
+Temporary=false
+
+[Breakpoint 2]
+Enabled=true
+File=NeuralNet.cpp
+Line=469
+Temporary=false
+
+[Breakpoint 3]
+Enabled=true
+File=NeuralNet.cpp
+Line=477
+Temporary=false
+
+[Breakpoint 4]
+Enabled=true
+File=ManagementControl.cpp
+Line=215
+Temporary=false
+
+[Breakpoint 5]
+Enabled=true
+File=Responder.cpp
+Line=99
+Temporary=false
+
+[Breakpoint 6]
+Enabled=true
+File=TcpDumpPacketProvider.cpp
+Line=364
+Temporary=false
+
+[Breakpoint 7]
+Enabled=true
+File=NeuralNet.cpp
+Line=649
+Temporary=false
+
+[Breakpoint 8]
+Enabled=true
+File=NeuralNet.cpp
+Line=666
+Temporary=false
+
+[Breakpoint 9]
+Enabled=true
+File=NeuralNet.cpp
+Line=1284
+Temporary=false
+
+[General]
+DebuggerCmdStr=
+FileVersion=1
+ProgramArgs=
+TTYLevel=7
+WorkingDirectory=
+
+[Memory]
+ColumnWidths=80,0
+NumExprs=0
+
+[Watches]
+Expr0=SnifferObj.PacketRecord
+Expr1=mktime(&CurrentSession.ts)
+Expr2=localtime(&ts)
+Expr3=SnifferObj.PacketRecord
+Expr4=MAX_ATTACK_INDEX

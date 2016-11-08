@@ -1,0 +1,571 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>frmMain</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>frmMain</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>613</width>
+            <height>469</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Unsupervised Neural Network based Intrusion Detector (UNNID) System</string>
+    </property>
+    <property name="icon">
+        <pixmap>UNNID.png</pixmap>
+    </property>
+    <property name="rightJustification">
+        <bool>true</bool>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>lblMessage</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>90</x>
+                <y>50</y>
+                <width>460</width>
+                <height>90</height>
+            </rect>
+        </property>
+        <property name="paletteForegroundColor">
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>103</blue>
+            </color>
+        </property>
+        <property name="font">
+            <font>
+                <family>Urw Chancery l</family>
+                <pointsize>18</pointsize>
+                <italic>1</italic>
+                <underline>1</underline>
+            </font>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>lblMsgWarning</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>60</y>
+                <width>80</width>
+                <height>70</height>
+            </rect>
+        </property>
+        <property name="paletteForegroundColor">
+            <color>
+                <red>235</red>
+                <green>0</green>
+                <blue>0</blue>
+            </color>
+        </property>
+        <property name="font">
+            <font>
+                <family>Urw Chancery l</family>
+                <pointsize>16</pointsize>
+                <italic>1</italic>
+            </font>
+        </property>
+    </widget>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>menubar</cstring>
+    </property>
+    <item text="&amp;File" name="fileMenu">
+        <action name="fileNewAction"/>
+        <action name="fileOpenAction"/>
+        <action name="fileSaveAction"/>
+        <action name="fileSaveAsAction"/>
+        <separator/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="&amp;Run" name="PopupMenu">
+        <action name="runStartTrainAction"/>
+        <action name="runStartTestAction"/>
+        <action name="runEvaluateIdsAction"/>
+        <separator/>
+        <action name="runStartRealTimeIdsAction"/>
+        <action name="runStopRealTimeIdsAction"/>
+        <action name="runStartOffLineIdsAction"/>
+    </item>
+    <item text="&amp;Settings" name="PopupMenu_2">
+        <action name="settingsDataProvidersSettingAction"/>
+        <action name="settingsPreProcessorSettingAction"/>
+        <action name="settingsNeuralNetSettingAction"/>
+        <action name="settingsResponderSettingAction"/>
+    </item>
+    <item text="&amp;Tools" name="PopupMenu_3">
+        <action name="runCapturePacketsAction"/>
+    </item>
+    <item text="&amp;Help" name="helpMenu">
+        <action name="helpContentsAction"/>
+        <action name="helpIndexAction"/>
+        <separator/>
+        <action name="helpAboutAction"/>
+    </item>
+</menubar>
+<toolbars>
+    <toolbar dock="2">
+        <property name="name">
+            <cstring>toolBar</cstring>
+        </property>
+        <property name="label">
+            <string>Tools</string>
+        </property>
+        <action name="fileNewAction"/>
+        <action name="fileOpenAction"/>
+        <action name="fileSaveAction"/>
+        <action name="fileSaveAsAction"/>
+        <action name="fileExitAction"/>
+        <separator/>
+        <action name="helpContentsAction"/>
+    </toolbar>
+    <toolbar dock="2">
+        <property name="name">
+            <cstring>Toolbar_2</cstring>
+        </property>
+        <property name="label">
+            <string>Toolbar_2</string>
+        </property>
+        <action name="runStartTrainAction"/>
+        <action name="runStartTestAction"/>
+        <action name="runEvaluateIdsAction"/>
+        <separator/>
+        <action name="runStartRealTimeIdsAction"/>
+        <action name="runStopRealTimeIdsAction"/>
+        <separator/>
+        <action name="runStartOffLineIdsAction"/>
+    </toolbar>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileNewAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>FileNew.png</iconset>
+        </property>
+        <property name="text">
+            <string>New Work Space</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;New Work Space</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+N</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileOpenAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>FileOpen.png</iconset>
+        </property>
+        <property name="text">
+            <string>Open Work Space</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Open Work Space...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+O</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>FileSave.png</iconset>
+        </property>
+        <property name="text">
+            <string>Save Work Space</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Save Work Space</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+S</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAsAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>FileSaveAs.png</iconset>
+        </property>
+        <property name="text">
+            <string>Save Work Space As</string>
+        </property>
+        <property name="menuText">
+            <string>Save Work Space &amp;As...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+A</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>Exit.png</iconset>
+        </property>
+        <property name="text">
+            <string>Exit</string>
+        </property>
+        <property name="menuText">
+            <string>E&amp;xit</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+X</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpContentsAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>Contents.png</iconset>
+        </property>
+        <property name="text">
+            <string>Contents</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Contents...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpIndexAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>Help.png</iconset>
+        </property>
+        <property name="text">
+            <string>Index</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Index...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>UNNID.png</iconset>
+        </property>
+        <property name="text">
+            <string>About UNNID System</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;About UNNID System</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>runStartTrainAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>TrainNet.png</iconset>
+        </property>
+        <property name="text">
+            <string>Start Train IDS</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>runStartRealTimeIdsAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>StartOnLine.png</iconset>
+        </property>
+        <property name="text">
+            <string>Start Real-Time IDS</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>runStopRealTimeIdsAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>StopOnLine.png</iconset>
+        </property>
+        <property name="text">
+            <string>Stop Real-Time IDS</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>settingsDataProvidersSettingAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>DataProviderSetting.png</iconset>
+        </property>
+        <property name="text">
+            <string>Data Providers Setting</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>settingsPreProcessorSettingAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>PreProcessorSetting.png</iconset>
+        </property>
+        <property name="text">
+            <string>PreProcessor Setting</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>settingsResponderSettingAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>ResponderSetting.png</iconset>
+        </property>
+        <property name="text">
+            <string>Responder Setting</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>settingsNeuralNetSettingAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>NeuralNetSetting.png</iconset>
+        </property>
+        <property name="text">
+            <string>Neural Net Setting</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>runStartTestAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>TestNet.png</iconset>
+        </property>
+        <property name="text">
+            <string>Start Test IDS</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>runEvaluateIdsAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>EvaluateNet.png</iconset>
+        </property>
+        <property name="text">
+            <string>Evaluate IDS Test</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>runStartOffLineIdsAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>StartOffLine.png</iconset>
+        </property>
+        <property name="text">
+            <string>Start Off-Line IDS</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>runCapturePacketsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Capture Packets</string>
+        </property>
+    </action>
+</actions>
+<connections>
+    <connection>
+        <sender>fileNewAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>fileNew()</slot>
+    </connection>
+    <connection>
+        <sender>fileOpenAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>fileOpen()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>fileSave()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveAsAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>fileSaveAs()</slot>
+    </connection>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>fileExit()</slot>
+    </connection>
+    <connection>
+        <sender>helpIndexAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>helpIndex()</slot>
+    </connection>
+    <connection>
+        <sender>helpContentsAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>helpContents()</slot>
+    </connection>
+    <connection>
+        <sender>helpAboutAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>helpAbout()</slot>
+    </connection>
+    <connection>
+        <sender>runStartTrainAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>runStartTrain()</slot>
+    </connection>
+    <connection>
+        <sender>runStopRealTimeIdsAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>runStopRealTimeIds()</slot>
+    </connection>
+    <connection>
+        <sender>runStartRealTimeIdsAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>runStartRealTimeIds()</slot>
+    </connection>
+    <connection>
+        <sender>settingsResponderSettingAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>settingsResponderSetting()</slot>
+    </connection>
+    <connection>
+        <sender>settingsPreProcessorSettingAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>settingsPreProcessorSetting()</slot>
+    </connection>
+    <connection>
+        <sender>settingsNeuralNetSettingAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>settingsNeuralNetSetting()</slot>
+    </connection>
+    <connection>
+        <sender>runStartTestAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>runStartTest()</slot>
+    </connection>
+    <connection>
+        <sender>settingsDataProvidersSettingAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>settingsDataProvidersSetting()</slot>
+    </connection>
+    <connection>
+        <sender>runEvaluateIdsAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>runEvaluateIds()</slot>
+    </connection>
+    <connection>
+        <sender>runStartOffLineIdsAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>runStartOffLineIds()</slot>
+    </connection>
+    <connection>
+        <sender>runCapturePacketsAction</sender>
+        <signal>activated()</signal>
+        <receiver>frmMain</receiver>
+        <slot>runCapturePackets()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">frmMain.ui.h</include>
+</includes>
+<variables>
+    <variable access="private">char fileName[512];</variable>
+    <variable access="private">bool Exitted;</variable>
+</variables>
+<slots>
+    <slot>fileNew()</slot>
+    <slot>fileOpen()</slot>
+    <slot>fileSave()</slot>
+    <slot>fileSaveAs()</slot>
+    <slot>fileExit()</slot>
+    <slot>helpIndex()</slot>
+    <slot>helpContents()</slot>
+    <slot>helpAbout()</slot>
+    <slot>runStartTrain()</slot>
+    <slot>runStartTest()</slot>
+    <slot>runStopRealTimeIds()</slot>
+    <slot>runStartRealTimeIds()</slot>
+    <slot>settingsResponderSetting()</slot>
+    <slot>runStartOffLineIds()</slot>
+    <slot>settingsPreProcessorSetting()</slot>
+    <slot>settingsNeuralNetSetting()</slot>
+    <slot>settingsDataProvidersSetting()</slot>
+    <slot>runEvaluateIds()</slot>
+    <slot>runCapturePackets()</slot>
+</slots>
+<functions>
+    <function returnType="int">saveAndContinue( const QString &amp; action )</function>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

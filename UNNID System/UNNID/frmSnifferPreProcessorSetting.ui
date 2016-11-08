@@ -1,0 +1,523 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>frmSnifferPreprocessorSetting</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>frmSnifferPreprocessorSetting</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>474</width>
+            <height>486</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Sniffer &amp; PreProcessor Setting</string>
+    </property>
+    <property name="icon">
+        <pixmap>network_local.png</pixmap>
+    </property>
+    <widget class="KSqueezedTextLabel">
+        <property name="name">
+            <cstring>lblDevice</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>10</y>
+                <width>140</width>
+                <height>21</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Network Ad...er Device:</string>
+        </property>
+    </widget>
+    <widget class="KLineEdit">
+        <property name="name">
+            <cstring>txtDevice</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>160</x>
+                <y>10</y>
+                <width>90</width>
+                <height>22</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string></string>
+        </property>
+    </widget>
+    <widget class="KPushButton">
+        <property name="name">
+            <cstring>btmApply</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>290</x>
+                <y>390</y>
+                <width>90</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <family>Helvetica [Urw]</family>
+                <pointsize>9</pointsize>
+                <bold>1</bold>
+            </font>
+        </property>
+        <property name="text">
+            <string>Apply</string>
+        </property>
+    </widget>
+    <widget class="KPushButton">
+        <property name="name">
+            <cstring>btmCancel</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>180</x>
+                <y>390</y>
+                <width>90</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <family>Helvetica [Urw]</family>
+                <pointsize>9</pointsize>
+                <bold>1</bold>
+            </font>
+        </property>
+        <property name="text">
+            <string>Cancel</string>
+        </property>
+    </widget>
+    <widget class="KPushButton">
+        <property name="name">
+            <cstring>btmOk</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>70</x>
+                <y>390</y>
+                <width>90</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <family>Helvetica [Urw]</family>
+                <pointsize>9</pointsize>
+                <bold>1</bold>
+            </font>
+        </property>
+        <property name="text">
+            <string>OK</string>
+        </property>
+    </widget>
+    <widget class="QTabWidget">
+        <property name="name">
+            <cstring>tabPacketType</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>440</width>
+                <height>330</height>
+            </rect>
+        </property>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tabUDP</cstring>
+            </property>
+            <attribute name="title">
+                <string>UDP Packet</string>
+            </attribute>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout15</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>20</y>
+                        <width>410</width>
+                        <height>160</height>
+                    </rect>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QCheckBox" row="3" column="0">
+                        <property name="name">
+                            <cstring>chkUdpLength</cstring>
+                        </property>
+                        <property name="text">
+                            <string>UDP Message Length</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>chkUdpPacketDate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Send Packet Date</string>
+                        </property>
+                        <property name="autoRepeat">
+                            <bool>false</bool>
+                        </property>
+                        <property name="checked">
+                            <bool>false</bool>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="1">
+                        <property name="name">
+                            <cstring>chkUdpDestPort</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Port</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>chkUdpPacketTime</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Send Packet Time</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="1">
+                        <property name="name">
+                            <cstring>chkUdpChecksum</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Checksum</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="1">
+                        <property name="name">
+                            <cstring>chkUdpDestIp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination IP Address</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>chkUdpSourceIp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Source IP Address</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>chkUdpSourcePort</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Source Port</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tabTCP</cstring>
+            </property>
+            <attribute name="title">
+                <string>TCP Packet</string>
+            </attribute>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout12</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>20</y>
+                        <width>410</width>
+                        <height>270</height>
+                    </rect>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QCheckBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>chkTcpPort</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Source Port</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="5" column="0">
+                        <property name="name">
+                            <cstring>chkTcpWindow</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Window</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="0">
+                        <property name="name">
+                            <cstring>chkTcpSeqNumber</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Sequence Number</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="1">
+                        <property name="name">
+                            <cstring>chkTcpDestIp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination IP Address</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>chkTcpPacketDate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Send Packet Date</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="1">
+                        <property name="name">
+                            <cstring>chkTcpAckNumber</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Acknowledgement Number</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>chkTcpPacketTime</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Send Packet Time</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="1">
+                        <property name="name">
+                            <cstring>chkTcpCode</cstring>
+                        </property>
+                        <property name="text">
+                            <string>TCP Code</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="1">
+                        <property name="name">
+                            <cstring>chkTcpDestPort</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination Port</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="6" column="1">
+                        <property name="name">
+                            <cstring>chkTcpLength</cstring>
+                        </property>
+                        <property name="text">
+                            <string>TCP Message Length</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>chkTcpSourceIp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Source IP Address</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="5" column="1">
+                        <property name="name">
+                            <cstring>chkTcpChecksum</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Checksum</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="0">
+                        <property name="name">
+                            <cstring>chkTcpHeaderLength</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Header Length</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="6" column="0">
+                        <property name="name">
+                            <cstring>chkUrgentPointer</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Urgent Pointer</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tabICMP</cstring>
+            </property>
+            <attribute name="title">
+                <string>ICMP Packet</string>
+            </attribute>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout16</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>20</y>
+                        <width>410</width>
+                        <height>160</height>
+                    </rect>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>chkIcmpPacketDate</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Send Packet Date</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="1">
+                        <property name="name">
+                            <cstring>chkIcmpCode</cstring>
+                        </property>
+                        <property name="text">
+                            <string>ICMP Code</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>chkIcmpType</cstring>
+                        </property>
+                        <property name="text">
+                            <string>ICMP Type</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>chkIcmpPacketTime</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Send Packet Time</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>chkIcmpSourceIp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Source IP Address</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="0">
+                        <property name="name">
+                            <cstring>chkIcmpChecksum</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Checksum</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="1">
+                        <property name="name">
+                            <cstring>chkIcmpDestIp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Destination IP Address</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tabARP</cstring>
+            </property>
+            <attribute name="title">
+                <string>ARP Packet</string>
+            </attribute>
+        </widget>
+    </widget>
+</widget>
+<tabstops>
+    <tabstop>txtDevice</tabstop>
+    <tabstop>tabPacketType</tabstop>
+    <tabstop>chkUdpPacketDate</tabstop>
+    <tabstop>chkUdpPacketTime</tabstop>
+    <tabstop>chkUdpSourceIp</tabstop>
+    <tabstop>chkUdpDestIp</tabstop>
+    <tabstop>chkUdpSourcePort</tabstop>
+    <tabstop>chkUdpDestPort</tabstop>
+    <tabstop>chkUdpLength</tabstop>
+    <tabstop>chkUdpChecksum</tabstop>
+    <tabstop>chkTcpPacketDate</tabstop>
+    <tabstop>chkTcpPacketTime</tabstop>
+    <tabstop>chkTcpSourceIp</tabstop>
+    <tabstop>chkTcpDestIp</tabstop>
+    <tabstop>chkTcpPort</tabstop>
+    <tabstop>chkTcpDestPort</tabstop>
+    <tabstop>chkTcpSeqNumber</tabstop>
+    <tabstop>chkTcpAckNumber</tabstop>
+    <tabstop>chkTcpHeaderLength</tabstop>
+    <tabstop>chkTcpCode</tabstop>
+    <tabstop>chkTcpWindow</tabstop>
+    <tabstop>chkTcpChecksum</tabstop>
+    <tabstop>chkUrgentPointer</tabstop>
+    <tabstop>chkTcpLength</tabstop>
+    <tabstop>chkIcmpPacketDate</tabstop>
+    <tabstop>chkIcmpPacketTime</tabstop>
+    <tabstop>chkIcmpSourceIp</tabstop>
+    <tabstop>chkIcmpDestIp</tabstop>
+    <tabstop>chkIcmpType</tabstop>
+    <tabstop>chkIcmpCode</tabstop>
+    <tabstop>chkIcmpChecksum</tabstop>
+    <tabstop>btmOk</tabstop>
+    <tabstop>btmCancel</tabstop>
+    <tabstop>btmApply</tabstop>
+</tabstops>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>ksqueezedtextlabel.h</includehint>
+    <includehint>klineedit.h</includehint>
+    <includehint>kpushbutton.h</includehint>
+    <includehint>kpushbutton.h</includehint>
+    <includehint>kpushbutton.h</includehint>
+</includehints>
+</UI>

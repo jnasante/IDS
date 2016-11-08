@@ -1,0 +1,24 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>frmResponserSetting</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>frmResponserSetting</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>571</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Responser Setting</string>
+    </property>
+    <property name="icon">
+        <pixmap>bell.png</pixmap>
+    </property>
+</widget>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

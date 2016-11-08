@@ -1,0 +1,140 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>frmProgressWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>frmProgressWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>430</width>
+            <height>130</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>1</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>430</width>
+            <height>130</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>430</width>
+            <height>130</height>
+        </size>
+    </property>
+    <property name="baseSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="cursor">
+        <cursor>3</cursor>
+    </property>
+    <property name="caption">
+        <string>Please Wait . . . </string>
+    </property>
+    <property name="icon">
+        <pixmap>UNNID.png</pixmap>
+    </property>
+    <property name="mouseTracking">
+        <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+        <bool>false</bool>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>false</bool>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>btmStop</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>90</y>
+                <width>100</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>&amp;Stop</string>
+        </property>
+        <property name="default">
+            <bool>true</bool>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>btmCancel</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>250</x>
+                <y>90</y>
+                <width>100</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>&amp;Cancel</string>
+        </property>
+    </widget>
+    <widget class="QProgressBar">
+        <property name="name">
+            <cstring>pgbTrainTest</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>40</x>
+                <y>40</y>
+                <width>360</width>
+                <height>30</height>
+            </rect>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>btmStop</sender>
+        <signal>clicked()</signal>
+        <receiver>frmProgressWindow</receiver>
+        <slot>btmStop_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>btmCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>frmProgressWindow</receiver>
+        <slot>btmCancel_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">frmProgressWindow.ui.h</include>
+</includes>
+<variables>
+    <variable access="private">int ProgressState;</variable>
+</variables>
+<slots>
+    <slot>btmStop_clicked()</slot>
+    <slot>btmCancel_clicked()</slot>
+    <slot>setCaptions( int Action )</slot>
+</slots>
+<functions>
+    <function returnType="int">getProgressState()</function>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
