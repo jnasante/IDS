@@ -71,7 +71,6 @@ class SOM:
 
 		self.alpha_tmp = self.alpha * tf.exp( - self.current_iteration/self.timeconst_alpha  )
 
-
 		self.input_placeholder_ = tf.expand_dims(self.input_placeholder, 1)
 		self.input_placeholder_ = tf.tile(self.input_placeholder_, (1,self.n*self.n,1) )
 
@@ -148,7 +147,6 @@ def example():
 
 	sess.run(tf.initialize_all_variables())
 
-
 	#For plotting the images
 	from matplotlib import pyplot as plt
 
@@ -170,14 +168,13 @@ def example():
 		  [.5, .5, .5],
 		  [.66, .66, .66]])
 
-
 	for i in range(num_training):
 		rnd_ind = np.random.randint(0, len(colors))
 		s.train(colors[rnd_ind,:])
 
+	print(len(s.get_weights()))
 
 	plt.imshow( np.reshape(s.get_weights(), [30, 30, 3]) )
 
 	plt.show()
-
 

@@ -5,7 +5,7 @@ import numpy as np
 from data_processor import data, X, y
 
 sess = tf.InteractiveSession()
-epochs = 10
+epochs = 100
 map_size = 30
 num_features = len(X[0])
 
@@ -20,7 +20,8 @@ for i in range(epochs):
 	rnd_ind = np.random.randint(0, len(X))
 	s.train(X[rnd_ind,:])
 
-print(s.get_weights())
+print(np.reshape(s.get_weights(), [map_size, map_size, num_features]))
+print(np.array(y) * s.get_weights())
 
 # plot.imshow( np.reshape(s.get_weights(), [map_size, map_size, num_features]) )
 
