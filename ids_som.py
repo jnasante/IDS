@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 # Parameters
 num_features = len(X[0])
-cluster_units_number = (30, 30)
+cluster_units_number = (50, 50)
 epochs = 100
 learning_rate = 0.5
 neighborhood_number = 7
@@ -60,8 +60,8 @@ def kohonenSOM():
 	print(X[0])
 	print(y[0])
 
-	# plt.imshow(m.neuron_heatmap())
-	plt.imshow(m.distance_heatmap(X[0]))
+	plt.imshow(m.neuron_heatmap())
+	# plt.imshow(m.distance_heatmap(X[0]))
 	plt.show()
 
 
