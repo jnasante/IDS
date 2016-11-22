@@ -5,6 +5,21 @@ import numpy as np
 print('Reading data...')
 data = pd.read_csv('data/kddcup_10_percent_normalized.csv', header=None)
 
+# Disgusting, hardcoded
+classification_id = {
+	'normal' : 0,
+	'pod' : 1,
+	'neptune' : 2,
+	'guess_passwd' : 3,
+	'loadmodule' : 4,
+	'teardrop' : 5,
+	'buffer_overflow' : 6,
+	'perl' : 7,
+	'smurf' : 8
+}
+
+classification = reverse_map = dict(reversed(item) for item in classification_id.items())
+
 # for i in range(1, 4):
 # 	keys = list(set(data[i]))
 # 	print(keys)
