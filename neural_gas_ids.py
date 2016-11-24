@@ -1,3 +1,4 @@
+import data_processor
 from data_processor import data, X, y, classification, classification_id
 import numpy as np
 from matplotlib import pyplot as plt
@@ -6,17 +7,15 @@ from matplotlib import pyplot as plt
 num_features = len(X[0])
 cluster_units_number = (50, 50)
 epochs = 100
+obj_file_name = 'objects/kohonenGrowingGas.pkl'
 
-
-############### Kohonen SOM ###############
-def kohonenGrowingGas():
+############### Kohonen Growing Gas ###############
+def trainKohonenGrowingGas():
 	import kohonen
-	# from ids_som import kohonenSOM
 
 	params = kohonen.GrowingGasParameters(
 		dimension=num_features,
 		shape=(50,))
-
 
 	m = kohonen.GrowingGas(params)
 	m.reset() # Need to reset after initialization
@@ -26,6 +25,12 @@ def kohonenGrowingGas():
 		print('Epoch: {0}'.format(e))
 		for sample in X:
 			m.learn(sample)
+
+	# Save to file
+	data_processor.save_object(m, obj_file_name)
+
+def kohonenGrowingGas():
+	m = data_processor.get_object(obj_file_name)
 
 	winner = m.flat_to_coords(m.winner(X[0]))
 	winning_neuron = m.neuron(winner)
@@ -42,5 +47,5 @@ def kohonenGrowingGas():
 	plt.show()
 
 
-
+trainKohonenGrowingGas()
 kohonenGrowingGas()

@@ -1,7 +1,18 @@
 import pandas as pd
 import numpy as np
+import cPickle as pickle
 # from sklearn.model_selection import train_test_split
 
+# Helper Methods
+def save_object(obj, filename):
+    with open(filename, 'wb') as output:
+        pickle.dump(obj, output, pickle.HIGHEST_PROTOCOL)
+
+def get_object(filename):
+	with open(filename, 'rb') as obj:
+	    return pickle.load(obj)
+
+# Basic funcitonality
 print('Reading data...')
 data = pd.read_csv('data/kddcup_10_percent_normalized.csv', header=None)
 

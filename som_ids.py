@@ -1,7 +1,7 @@
+import data_processor
 from data_processor import data, X, y, classification, classification_id
 import numpy as np
 from matplotlib import pyplot as plt
-import cPickle as pickle
 
 # Parameters
 num_features = len(X[0])
@@ -10,17 +10,9 @@ cluster_units_number = (50, 50)
 epochs = 100
 learning_rate = 0.5
 neighborhood_number = 7
-
-def save_object(obj, filename):
-    with open(filename, 'wb') as output:
-        pickle.dump(obj, output, pickle.HIGHEST_PROTOCOL)
-
-def get_object(filename):
-	with open(filename, 'rb') as obj:
-	    return pickle.load(obj)
+obj_file_name = 'objects/kohonenSOM.pkl'
 
 ############### Tensorflow SOM ###############
-
 def tensorSOM():
 	from som import SOM
 	import tensorflow as tf
@@ -43,7 +35,6 @@ def tensorSOM():
 
 
 ############### Kohonen SOM ###############
-
 def trainKohonenSOM():
 	import kohonen
 
@@ -63,11 +54,10 @@ def trainKohonenSOM():
 			m.learn(sample)
 
 	# Save to file
-	save_object(m, 'kohonenSOM.pkl')
-
+	data_processor.save_object(m, obj_file_name)
 
 def kohonenSOM():
-	m = get_object('kohonenSOM.pkl')
+	m = data_processor.get_object(obj_file_name)
 
 	winner = m.flat_to_coords(m.winner(X[744]))
 
