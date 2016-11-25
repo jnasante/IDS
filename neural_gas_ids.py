@@ -1,5 +1,5 @@
 import data_processor
-from data_processor import data, X, y, classification, classification_id
+from data_processor import data, X, y
 import numpy as np
 from matplotlib import pyplot as plt
 

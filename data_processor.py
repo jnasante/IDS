@@ -12,6 +12,18 @@ def get_object(filename):
 	with open(filename, 'rb') as obj:
 	    return pickle.load(obj)
 
+def count():
+	num_samples = len(y)
+	num_malicious = 0
+	for i in range(num_samples):
+		if (classification_id[y[i][:-1]] != 0):
+			print(i)
+			break
+			num_malicious += 1
+
+	num_normal = num_samples - num_malicious
+	print('Malicious: {0}\tNormal: {1}\tTotal: {2}\tMin Accuracy: {3}').format(num_malicious, num_normal, num_samples, float(num_normal)/num_samples)
+
 # Basic funcitonality
 print('Reading data...')
 data = pd.read_csv('data/kddcup_10_percent_normalized.csv', header=None)

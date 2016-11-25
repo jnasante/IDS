@@ -1,5 +1,5 @@
 import data_processor
-from data_processor import data, X, y, classification, classification_id
+from data_processor import data, X, y
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -69,16 +69,6 @@ def kohonenSOM():
 	plt.imshow(m.neuron_heatmap())
 	# plt.imshow(m.distance_heatmap(X[0]))
 	plt.show()
-
-def count():
-	num_malicious = 0
-	for i in range(num_samples):
-		if (classification_id[y[i][:-1]] != 0):
-			print(i)
-			break
-			num_malicious += 1
-
-	print('Malicious: {0}\tNormal: {1}\tTotal: {2}\tMin Accuracy: {3}').format(num_malicious, num_samples-num_malicious, num_samples, float((num_samples-num_malicious))/num_samples)
 
 # trainKohonenSOM()
 kohonenSOM()
