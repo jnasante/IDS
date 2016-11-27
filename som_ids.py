@@ -1,11 +1,11 @@
 import data_processor
-from data_processor import data, X, y
-import numpy as np
-from matplotlib import pyplot as plt
+
+# Initialize
+data_processor.initialize()
 
 # Parameters
-num_features = len(X[0])
-num_samples = len(X)
+num_features = len(data_processor.X[0])
+num_samples = len(data_processor.X)
 cluster_units_number = (50, 50)
 epochs = 100
 learning_rate = 0.5
@@ -14,6 +14,7 @@ obj_file_name = 'objects/kohonenSOM.pkl'
 
 ############### Tensorflow SOM ###############
 def tensorSOM():
+	import numpy as np
 	from som import SOM
 	import tensorflow as tf
 
@@ -25,7 +26,7 @@ def tensorSOM():
 	sess.run(tf.initialize_all_variables())
 
 	#Training inputs
-	for i in range(epochs):
+	for i in range(10):
 		print('Epoch: {0}'.format(i))
 		rnd_ind = np.random.randint(0, len(X))
 		s.train(X[rnd_ind,:])
@@ -50,28 +51,11 @@ def trainKohonenSOM():
 	# Time for school!
 	for e in range(epochs):
 		print('Epoch: {0}'.format(e))
-		for sample in X:
+		for sample in data_processor.featureScale(data_processor.X):
 			m.learn(sample)
 
 	# Save to file
 	data_processor.save_object(m, obj_file_name)
 
-def kohonenSOM():
-	m = data_processor.get_object(obj_file_name)
-
-	winner = m.flat_to_coords(m.winner(X[744]))
-
-	print(winner)
-	print(m.neuron(winner))
-	print(X[744])
-	print(y[744])
-
-	plt.imshow(m.neuron_heatmap())
-	# plt.imshow(m.distance_heatmap(X[0]))
-	plt.show()
-
-# trainKohonenSOM()
-kohonenSOM()
-
-
-
+def getObject():
+	return data_processor.get_object(obj_file_name)
