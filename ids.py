@@ -78,12 +78,6 @@ def predict_all(m):
 	print('Accuracy: {0}\tNumber of samples: {1}\tClassification time: {2}'.format(accuracy, total_test_samples, time.time()-start))
 	return accuracy
 
-# som_ids.trainKohonenSOM()
-run_net(som_ids.getObject())
-
-# neural_gas_ids.trainKohonenGrowingGas(iterations=5)
-run_net(neural_gas_ids.getObject())
-
 ################## Collect Statistics ##################
 metrics_range = range(1, 21, 1)
 def get_metrics(m, training_method, get_object_method, suffix):
@@ -101,23 +95,29 @@ def get_metrics(m, training_method, get_object_method, suffix):
 		accuracies.append(accuracy)
 		times.append(time.time() - start)
 
-	np.savetxt('accuracies_{0}_{1}-{2}.txt'.format(suffix, metrics_range[0], metrics_range[-1]), accuracies)
-	np.savetxt('times_{0}_{1}-{2}.txt'.format(suffix, metrics_range[0], metrics_range[-1]), times)
+	np.savetxt('metrics/accuracies_{0}_{1}-{2}.txt'.format(suffix, metrics_range[0], metrics_range[-1]), accuracies)
+	np.savetxt('metrics/times_{0}_{1}-{2}.txt'.format(suffix, metrics_range[0], metrics_range[-1]), times)
 
 def graph_accuracies(title, suffix):
-	accuracies = np.loadtxt('accuracies_{0}_{1}-{2}.txt'.format(suffix, metrics_range[0], metrics_range[-1]))
+	accuracies = np.loadtxt('metrics/accuracies_{0}_{1}-{2}.txt'.format(suffix, metrics_range[0], metrics_range[-1]))
 
 	plt.plot(metrics_range, accuracies)
+	plt.ylim([0.60, 1])
 	plt.title(title)
-	plt.xlabel('Epochs')
-	plt.ylabel('Accuracy')
+	plt.xlabel('Epochs (Training Set)')
+	plt.ylabel('Accuracy (Test Set)')
 	plt.show()
 
 def calculate_times(suffix):
-	times = np.loadtxt('times_{0}_{1}-{2}.txt'.format(suffix, metrics_range[0], metrics_range[-1]))
+	times = np.loadtxt('metrics/times_{0}_{1}-{2}.txt'.format(suffix, metrics_range[0], metrics_range[-1]))
 	tpe = np.sum(times)/float(np.sum(metrics_range))
 	print('Time Per Epoch: {0}s'.format(tpe))
 
+# som_ids.trainKohonenSOM()
+run_net(som_ids.getObject())
+
+# neural_gas_ids.trainKohonenGrowingGas(iterations=5)
+run_net(neural_gas_ids.getObject())
 
 # get_metrics(neural_gas_ids.createKohonenGrowingGas(), neural_gas_ids.trainKohonenGrowingGas, neural_gas_ids.getObject, 'ng')
 # graph_accuracies('Epochs vs. Accuracy (Growing Neural Gas)', 'ng')
